@@ -1,6 +1,4 @@
 package com.gameoflife;
-
-import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public abstract class Cell implements Runnable {
@@ -54,7 +52,6 @@ public abstract class Cell implements Runnable {
                         continue;
                     }
                 }
-
                 Thread.sleep(SimulationEngine.T_FULL_MS);
             }
         } catch (InterruptedException e) {
